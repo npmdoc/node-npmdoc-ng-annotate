@@ -1,0 +1,86 @@
+<svg height="1326" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1326" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">  0.  2017-04-07 07:03:19 +0000   403968 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-07 07:03:19 +0000     1589 bytes  BUILD.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-07 07:03:19 +0000     6697 bytes  CHANGES.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-07 07:03:19 +0000     3820 bytes  IMPLICIT.md</tspan>
+<tspan x="10" y="90">  4.  2017-04-07 07:03:19 +0000     1084 bytes  LICENSE</tspan>
+<tspan x="10" y="106">  5.  2017-04-07 07:03:19 +0000     1996 bytes  OPTIONS.md</tspan>
+<tspan x="10" y="122">  6.  2017-04-07 07:03:19 +0000     6389 bytes  README.md</tspan>
+<tspan x="10" y="138">  7.  2017-04-07 07:03:19 +0000     5136 bytes  build/es5/generate-sourcemap.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-07 07:03:19 +0000     3060 bytes  build/es5/lut.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-07 07:03:19 +0000       49 bytes  build/es5/ng-annotate</tspan>
+<tspan x="10" y="186"> 10.  2017-04-07 07:03:19 +0000    40987 bytes  build/es5/ng-annotate-main.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-07 07:03:19 +0000     6240 bytes  build/es5/ng-annotate.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-07 07:03:19 +0000     6643 bytes  build/es5/nginject.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-07 07:03:19 +0000     1798 bytes  build/es5/optionals/angular-dashboard-framework.\</tspan>
+<tspan x="10" y="250">js</tspan>
+<tspan x="10" y="266"> 14.  2017-04-07 07:03:19 +0000     8505 bytes  build/es5/run-tests.js</tspan>
+<tspan x="10" y="282"> 15.  2017-04-07 07:03:19 +0000     4909 bytes  build/es5/scope.js</tspan>
+<tspan x="10" y="298"> 16.  2017-04-07 07:03:19 +0000     6153 bytes  build/es5/scopetools.js</tspan>
+<tspan x="10" y="314"> 17.  2017-04-07 07:03:19 +0000      407 bytes  build/es5/tests/has_inject.js</tspan>
+<tspan x="10" y="330"> 18.  2017-04-07 07:03:19 +0000      308 bytes  build/es5/tests/has_inject_removed.js</tspan>
+<tspan x="10" y="346"> 19.  2017-04-07 07:03:19 +0000     2555 bytes  build/es5/tests/ngmin-tests/ngmin-issues.txt</tspan>
+<tspan x="10" y="362"> 20.  2017-04-07 07:03:19 +0000     6248 bytes  build/es5/tests/ngmin-tests/ngmin_original.js</tspan>
+<tspan x="10" y="378"> 21.  2017-04-07 07:03:19 +0000     6708 bytes  build/es5/tests/ngmin-tests/ngmin_with_annotatio\</tspan>
+<tspan x="10" y="394">ns.js</tspan>
+<tspan x="10" y="410"> 22.  2017-04-07 07:03:19 +0000      264 bytes  build/es5/tests/ngmin-tests/repo/INFO</tspan>
+<tspan x="10" y="426"> 23.  2017-04-07 07:03:19 +0000     4696 bytes  build/es5/tests/ngmin-tests/repo/chain.js</tspan>
+<tspan x="10" y="442"> 24.  2017-04-07 07:03:19 +0000     1867 bytes  build/es5/tests/ngmin-tests/repo/directive.js</tspan>
+<tspan x="10" y="458"> 25.  2017-04-07 07:03:19 +0000     1492 bytes  build/es5/tests/ngmin-tests/repo/loader.js</tspan>
+<tspan x="10" y="474"> 26.  2017-04-07 07:03:19 +0000     3400 bytes  build/es5/tests/ngmin-tests/repo/reference.js</tspan>
+<tspan x="10" y="490"> 27.  2017-04-07 07:03:19 +0000     2317 bytes  build/es5/tests/ngmin-tests/repo/route-provider.\</tspan>
+<tspan x="10" y="506">js</tspan>
+<tspan x="10" y="522"> 28.  2017-04-07 07:03:19 +0000     5884 bytes  build/es5/tests/ngmin-tests/repo/simple.js</tspan>
+<tspan x="10" y="538"> 29.  2017-04-07 07:03:19 +0000      273 bytes  build/es5/tests/ngmin-tests/repo/util.js</tspan>
+<tspan x="10" y="554"> 30.  2017-04-07 07:03:19 +0000     2531 bytes  build/es5/tests/optionals/angular-dashboard-fram\</tspan>
+<tspan x="10" y="570">ework.annotated.js</tspan>
+<tspan x="10" y="586"> 31.  2017-04-07 07:03:19 +0000     2233 bytes  build/es5/tests/optionals/angular-dashboard-fram\</tspan>
+<tspan x="10" y="602">ework.js</tspan>
+<tspan x="10" y="618"> 32.  2017-04-07 07:03:19 +0000    27038 bytes  build/es5/tests/original.js</tspan>
+<tspan x="10" y="634"> 33.  2017-04-07 07:03:19 +0000     2491 bytes  build/es5/tests/rename.annotated.js</tspan>
+<tspan x="10" y="650"> 34.  2017-04-07 07:03:19 +0000     1823 bytes  build/es5/tests/rename.js</tspan>
+<tspan x="10" y="666"> 35.  2017-04-07 07:03:19 +0000      660 bytes  build/es5/tests/sourcemaps.annotated.js</tspan>
+<tspan x="10" y="682"> 36.  2017-04-07 07:03:19 +0000      400 bytes  build/es5/tests/sourcemaps.coffee</tspan>
+<tspan x="10" y="698"> 37.  2017-04-07 07:03:19 +0000      217 bytes  build/es5/tests/todo.js</tspan>
+<tspan x="10" y="714"> 38.  2017-04-07 07:03:19 +0000    30653 bytes  build/es5/tests/with_annotations.js</tspan>
+<tspan x="10" y="730"> 39.  2017-04-07 07:03:19 +0000      130 bytes  defs-config.json</tspan>
+<tspan x="10" y="746"> 40.  2017-04-07 07:03:19 +0000     5166 bytes  generate-sourcemap.js</tspan>
+<tspan x="10" y="762"> 41.  2017-04-07 07:03:19 +0000     3094 bytes  lut.js</tspan>
+<tspan x="10" y="778"> 42.  2017-04-07 07:03:19 +0000      279 bytes  ng-annotate-harmony</tspan>
+<tspan x="10" y="794"> 43.  2017-04-07 07:03:19 +0000    41253 bytes  ng-annotate-main.js</tspan>
+<tspan x="10" y="810"> 44.  2017-04-07 07:03:19 +0000     6318 bytes  ng-annotate.js</tspan>
+<tspan x="10" y="826"> 45.  2017-04-07 07:03:19 +0000     6679 bytes  nginject.js</tspan>
+<tspan x="10" y="842"> 46.  2017-04-07 07:03:19 +0000     1818 bytes  optionals/angular-dashboard-framework.js</tspan>
+<tspan x="10" y="858"> 47.  2017-04-07 07:03:19 +0000     2702 bytes  package.json</tspan>
+<tspan x="10" y="874"> 48.  2017-04-07 07:03:19 +0000     1182 bytes  plugin-example.js</tspan>
+<tspan x="10" y="890"> 49.  2017-04-07 07:03:19 +0000     1669 bytes  pos-to-linecolumn.js</tspan>
+<tspan x="10" y="906"> 50.  2017-04-07 07:03:19 +0000     8585 bytes  run-tests.js</tspan>
+<tspan x="10" y="922"> 51.  2017-04-07 07:03:19 +0000     4933 bytes  scope.js</tspan>
+<tspan x="10" y="938"> 52.  2017-04-07 07:03:19 +0000     6175 bytes  scopetools.js</tspan>
+<tspan x="10" y="954"> 53.  2017-04-07 07:03:19 +0000      407 bytes  tests/has_inject.js</tspan>
+<tspan x="10" y="970"> 54.  2017-04-07 07:03:19 +0000      308 bytes  tests/has_inject_removed.js</tspan>
+<tspan x="10" y="986"> 55.  2017-04-07 07:03:19 +0000     2555 bytes  tests/ngmin-tests/ngmin-issues.txt</tspan>
+<tspan x="10" y="1002"> 56.  2017-04-07 07:03:19 +0000     6248 bytes  tests/ngmin-tests/ngmin_original.js</tspan>
+<tspan x="10" y="1018"> 57.  2017-04-07 07:03:19 +0000     6708 bytes  tests/ngmin-tests/ngmin_with_annotations.js</tspan>
+<tspan x="10" y="1034"> 58.  2017-04-07 07:03:19 +0000      264 bytes  tests/ngmin-tests/repo/INFO</tspan>
+<tspan x="10" y="1050"> 59.  2017-04-07 07:03:19 +0000     4696 bytes  tests/ngmin-tests/repo/chain.js</tspan>
+<tspan x="10" y="1066"> 60.  2017-04-07 07:03:19 +0000     1867 bytes  tests/ngmin-tests/repo/directive.js</tspan>
+<tspan x="10" y="1082"> 61.  2017-04-07 07:03:19 +0000     1492 bytes  tests/ngmin-tests/repo/loader.js</tspan>
+<tspan x="10" y="1098"> 62.  2017-04-07 07:03:19 +0000     3400 bytes  tests/ngmin-tests/repo/reference.js</tspan>
+<tspan x="10" y="1114"> 63.  2017-04-07 07:03:19 +0000     2317 bytes  tests/ngmin-tests/repo/route-provider.js</tspan>
+<tspan x="10" y="1130"> 64.  2017-04-07 07:03:19 +0000     5884 bytes  tests/ngmin-tests/repo/simple.js</tspan>
+<tspan x="10" y="1146"> 65.  2017-04-07 07:03:19 +0000      273 bytes  tests/ngmin-tests/repo/util.js</tspan>
+<tspan x="10" y="1162"> 66.  2017-04-07 07:03:19 +0000     2531 bytes  tests/optionals/angular-dashboard-framework.anno\</tspan>
+<tspan x="10" y="1178">tated.js</tspan>
+<tspan x="10" y="1194"> 67.  2017-04-07 07:03:19 +0000     2233 bytes  tests/optionals/angular-dashboard-framework.js</tspan>
+<tspan x="10" y="1210"> 68.  2017-04-07 07:03:19 +0000    27038 bytes  tests/original.js</tspan>
+<tspan x="10" y="1226"> 69.  2017-04-07 07:03:19 +0000     2491 bytes  tests/rename.annotated.js</tspan>
+<tspan x="10" y="1242"> 70.  2017-04-07 07:03:19 +0000     1823 bytes  tests/rename.js</tspan>
+<tspan x="10" y="1258"> 71.  2017-04-07 07:03:19 +0000      660 bytes  tests/sourcemaps.annotated.js</tspan>
+<tspan x="10" y="1274"> 72.  2017-04-07 07:03:19 +0000      400 bytes  tests/sourcemaps.coffee</tspan>
+<tspan x="10" y="1290"> 73.  2017-04-07 07:03:19 +0000      217 bytes  tests/todo.js</tspan>
+<tspan x="10" y="1306"> 74.  2017-04-07 07:03:19 +0000    30653 bytes  tests/with_annotations.js</tspan>
+</text>
+</svg>
