@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.ng-annotate.ng-annotate">
+            function <span class="apidocSignatureSpan"></span>ng-annotate
+            <span class="apidocSignatureSpan">(src, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.ng-annotate.lut">
             function <span class="apidocSignatureSpan">ng-annotate.</span>lut
             <span class="apidocSignatureSpan">(ast, src)</span>
@@ -391,6 +400,151 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.ng-annotate" id="apidoc.module.ng-annotate">module ng-annotate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ng-annotate.ng-annotate" id="apidoc.element.ng-annotate.ng-annotate">
+        function <span class="apidocSignatureSpan"></span>ng-annotate
+        <span class="apidocSignatureSpan">(src, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ngAnnotate(src, options) {
+    if (options.list) {
+        return {
+            list: Object.keys(allOptionals).sort(),
+        };
+    }
+
+    var mode = (options.add &#x26;&#x26; options.remove ? &#x22;rebuild&#x22; :
+        options.remove ? &#x22;remove&#x22; :
+            options.add ? &#x22;add&#x22; : null);
+
+    if (!mode) {
+        return {src: src};
+    }
+
+    var quot = options.single_quotes ? &#x22;&#x27;&#x22; : &#x27;&#x22;&#x27;;
+    var re = (options.regexp ? new RegExp(options.regexp) : /^[a-zA-Z0-9_\$\.\s]+$/);
+    var rename = new stringmap();
+    if (options.rename) {
+        options.rename.forEach(function(value) {
+            rename.set(value.from, value.to);
+        });
+    }
+    var ast;
+    var stats = {};
+
+    // detect newline and override os.EOL
+    var lf = src.lastIndexOf(&#x22;\n&#x22;);
+    if (lf &#x3e;= 1) {
+        EOL = (src[lf - 1] === &#x22;\r&#x22; ? &#x22;\r\n&#x22; : &#x22;\n&#x22;);
+    }
+
+    // [{type: &#x22;Block&#x22;|&#x22;Line&#x22;, value: str, range: [from,to]}, ..]
+    var comments = [];
+
+    try {
+        stats.parser_require_t0 = require_acorn_t0;
+        stats.parser_require_t1 = require_acorn_t1;
+        stats.parser_parse_t0 = Date.now();
+        // acorn
+        ast = parser(src, {
+            ecmaVersion: 6,
+            allowReserved: true,
+            locations: true,
+            ranges: true,
+            onComment: comments,
+        });
+        stats.parser_parse_t1 = Date.now();
+    } catch(e) {
+        return {
+            errors: [&#x22;error: couldn&#x27;t process source due to parse error&#x22;, e.message],
+        };
+    }
+
+    // append a dummy-node to ast so that lut.findNodeFromPos(lastPos) returns something
+    ast.body.push({
+        type: &#x22;DebuggerStatement&#x22;,
+        range: [ast.range[1], ast.range[1]],
+        loc: {
+            start: ast.loc.end,
+            end: ast.loc.end
+        }
+    });
+
+    // all source modifications are built up as operations in the
+    // fragments array, later sent to alter in one shot
+    var fragments = [];
+
+    // suspects is built up with suspect nodes by match.
+    // A suspect node will get annotations added / removed if it
+    // fulfills the arrayexpression or functionexpression look,
+    // and if it is in the correct context (inside an angular
+    // module definition)
+    var suspects = [];
+
+    // blocked is an array of blocked suspects. Any target node
+    // (final, i.e. IIFE-jumped, reference-followed and such) included
+    // in blocked will be ignored by judgeSuspects
+    var blocked = [];
+
+    // Position information for all nodes in the AST,
+    // used for sourcemap generation
+    var nodePositions = [];
+
+    var lut = new Lut(ast, src);
+
+    scopeTools.setupScopeAndReferences(ast);
+
+    var ctx = {
+        mode: mode,
+        quot: quot,
+        src: src,
+        srcForRange: function(range) {
+            return src.slice(range[0], range[1]);
+        },
+        re: re,
+        rename: rename,
+        comments: comments,
+        fragments: fragments,
+        suspects: suspects,
+        blocked: blocked,
+        lut: lut,
+        isFunctionExpressionWithArgs: isFunctionExpressionWithArgs,
+        isFunctionDeclarationWithArgs: isFunctionDeclarationWithArgs,
+        isAnnotatedArray: isAnnotatedArray,
+        addModuleContextDependentSuspect: addModuleContextDependentSuspect,
+        addModuleContextIndependentSuspect: addModuleContextIndependentSuspect,
+        stringify: stringify,
+        nodePositions: nodePositions,
+        matchResolve: matchResolve,
+        matchProp: matchProp,
+        last: last,
+    };
+
+    // setup optionals
+    var optionals = options.enable || [];
+    for (var i = 0; i &#x3c; optionals.length; i++) {
+        var optional = String(optionals[i]);
+        if (!allOptionals.hasOwnProperty(optional)) {
+            return {
+                errors: [&#x22;error: found no optional named &#x22; + optional],
+            };
+        }
+    }
+    var optionalsPlugins = optionals.map(function(optional) {
+        return allOptionals[optional];
+    });
+
+    var plugins = [].concat(optionalsPlugins, options.plugin || []);
+
+    function matchPlugins(node, isMethodCall) {
+        for (var i = 0; i &#x3c; plugins.length; i++) {
+            var res = plu ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
